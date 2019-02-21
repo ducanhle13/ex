@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu vi hình tròn</title>
+</head>
+<body>
+        <p>Tính diện tích hình tròn.</p>
+        <form action="/action_page.php">
+        Đường kính: <input type="text" id="fname"><br>
+            <!--Bán kính: <input type="text" name="lname"><br>-->
+            <input type="button" onclick="math();" value="submit">
+
+
+
+        </form>
+
+<script>
+    function math() {
+        var a = parseFloat(document.getElementById('fname').value);
+        var b = parseFloat((a * a) * 3.14);
+        document.write("Chu vi = " + b);
+    }
+
+
+</script>
+
+</body>
+</html>
