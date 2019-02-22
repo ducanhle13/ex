@@ -7,19 +7,23 @@
 <body>
         <p>Tính diện tích hình tròn.</p>
         <form action="/action_page.php">
-        Đường kính: <input type="text" id="fname"><br>
-            <!--Bán kính: <input type="text" name="lname"><br>-->
+
+            Đường kính: <input type="text" id="dk">
+
+
             <input type="button" onclick="math();" value="submit">
 
-
+            <br>Chu vi: <output type="text" id="cv"></br>
 
         </form>
 
 <script>
     function math() {
-        var a = parseFloat(document.getElementById('fname').value);
-        var b = parseFloat((a * a) * 3.14);
-        document.write("Chu vi = " + b);
+
+        {cv.value=parseFloat(dk.value)*(dk.value)*3.14}
+
+
+
     }
 
 
