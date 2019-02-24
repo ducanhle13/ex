@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caculator</title>
+    <h2>Caculator</h2>
+</head>
+<body>
+
+    <input type="text" placeholder="Nhập giá trị" id="numberOne">
+    <input type="text" placeholder="Nhập giá trị" id="numberTwo"><br>
+
+    <br>
+    <input type="submit" id="1" value="Addition(+)" onclick="ad()">
+    <input type="submit" id="2" value="Subtraction(-)" onclick="su()">
+    <input type="submit" id="3" value="Multiplication(*)" onclick="mu()">
+    <input type="submit" id="4" value="Division(/)" onclick="di()">
+    </br>
+
+    <br>Result Division: <output type="text" id="kq"/>
+
+<script>
+
+    function ad()
+     {
+         let numberOne = parseInt(document.getElementById('numberOne').value);
+         let numberTwo = parseInt(document.getElementById('numberTwo').value);
+         kq = (numberOne + numberTwo);
+         document.getElementById('kq').value = kq;
+     }
+
+    function su()
+     {
+         let numberOne = parseInt(document.getElementById('numberOne').value);
+         let numberTwo = parseInt(document.getElementById('numberTwo').value);
+         kq = (numberOne - numberTwo);
+         document.getElementById('kq').value = kq;
+      }
+
+    function mu()
+     {
+         let numberOne = parseInt(document.getElementById('numberOne').value);
+         let numberTwo = parseInt(document.getElementById('numberTwo').value);
+         kq = (numberOne * numberTwo);
+         document.getElementById('kq').value = kq;
+     }
+
+    function di()
+     {
+        let numberOne = parseInt(document.getElementById('numberOne').value);
+        let numberTwo = parseInt(document.getElementById('numberTwo').value);
+        kq = (numberOne / numberTwo);
+        document.getElementById('kq').value = kq;
+     }
+</script>
+</body>
+</html>
